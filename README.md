@@ -1,6 +1,6 @@
-# FireCracker - Credit Card Fraud Detection
+# FireCracker - Diabetic Risk Prediction
 
-In this project we are trying to predict fraudulent credit card transactions using Machine learning models
+In this project we are trying to predict Diabetic Risk Predition based on factors
 
 ## Team Members
 - Saloj K Gopi
@@ -13,12 +13,12 @@ In this project we are trying to predict fraudulent credit card transactions usi
 
 ## Environment
 - Python 
+- Flask
 - Machine Learning (Supervised Model)
 
 ## Synopsis
 
-The aim of this project is to predict fraudulent credit card transactions with the help of different machine learning models.In this project, you will analyse customer-level data that has been collected and analysed during a research collaboration of Worldline and the Machine Learning Group.
-The data set is taken from the [Kaggle website](https://www.kaggle.com/mlg-ulb/creditcardfraud) 
+
 
 
 
