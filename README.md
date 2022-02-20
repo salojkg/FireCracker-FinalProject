@@ -1,24 +1,29 @@
-# FireCracker - Diabetic Risk Predictor
+# Deliverable 2 - Diabetic Risk Predictor
 
-In this project we are trying to predict Diabetic based on Risk Factors of females of age 21 and above.We use [Kaggle Database](https://www.kaggle.com/mathchi/diabetes-data-set).
+We are designing a Diabetes Predictor App using Machine Learning with Dataset from Kaggle.
 
-## Team Members
-- Saloj K Gopi
-- Deepa Francis
-- Indira Donthi
-- Darshan Patani
+## Objective
 
-## Github 
-[Link to Project Repo](https://github.com/salojkg/FireCracker)
+We are using a dataset originally from the National Institute of Diabetes and Digestive and Kidney Diseases. With this dataset we are testing and developing a Diabetes predictor application. This dataset is used to diagnostically predict whether or not a patient has diabetes, based on certain health indicators included in the dataset. In thiis dataset, all patients are females at least 21 years old of Pima Indian heritage.
 
-## Environment
-- Python 
+### Tools and Technologies
+
+- Python
+- Matplotlib
+- R Studio
 - Flask
-- Machine Learning (Supervised Model)
+- HTML / CSS
+- JavaScript
 
-## Synopsis
+## Dataset
 
-In this project we are trying to predit Diabetic probability based on Risk Factors.The risk factors we analyze during this are
+- Data Source - [Kaggle Database](https://www.kaggle.com/mathchi/diabetes-data-set)
+- Filetype - CSV
+- File Storage - CSV
+- Key Statistics - 768 Rows and 9 Columns
+
+## Dataset Indicators
+
 - Pregnancies: Number of times pregnant
 - Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
 - BloodPressure: Diastolic blood pressure (mm Hg)
@@ -29,8 +34,29 @@ In this project we are trying to predit Diabetic probability based on Risk Facto
 - Age: Age (years)
 - Outcome: Class variable (0 or 1)
 
-The user input is collected with Webapp build with Flask, HTML, JSS & CSS to predict the probability.
+## Data Cleaning
+
+- Used Python for Data cleaning. In this process we understand that BMI, Glucose, Blood Pressure and BMI columuns have values 0. Values with 0 were replaced by Mean or Median depending on the Measures of Central Tendencies
+
+## Visualization Diabetic Predictor App using Flask
 
 
+## References
+
+- https://www.asc.ohio-state.edu/goel.1//STATLEARN/PROJECTS/Presentations/Diabetes_PimaIndians.pdf
+
+- https://vitalflux.com/pandas-impute-missing-values-mean-median-mode/#:~:text=You%20can%20use%20central%20tendency%20measures%20such%20as,using%20median%20or%20mode%20with%20skewed%20data%20distribution
+
+# Plan for Deliverable 3 - Diabetic Risk Predictor
+
+## Hypothesis Testing using R
+
+- There is a positive correlation between BMI and Diabetes
 
 
+## Machine Learning
+
+-- Three Models
+
+
+## App Development
