@@ -1,0 +1,31 @@
+.jumbotron {
+    background-image: url("../images/diabetes_3.jpg");
+    background-size: 50% 100%;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding-bottom: 20px;
+  }
+
+  input.new-filters {
+    width: 90%;
+    padding-right: 10px;
+  }
+
+  .heading {
+      color: black;
+      font-weight: bolder;
+  }
+
+  .h-divider{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:1px;
+    width:100%;
+    border-top:1px solid gray;
+   }
