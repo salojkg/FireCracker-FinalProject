@@ -49,11 +49,6 @@ We are using a dataset originally from the National Institute of Diabetes and Di
 
 # Plan for Deliverable 3 - Diabetic Risk Predictor
 
-## Hypothesis Testing using R
-
-- There is a positive correlation between BMI and Diabetes
-
-
 ## Machine Learning
 
 -- Three Models
