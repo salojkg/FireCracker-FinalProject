@@ -4,12 +4,13 @@
     text-align: center;
   }
 
+
   ul {
     list-style: none;
   }
 
   li {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   input.new-filters {
@@ -28,4 +29,8 @@
     height:1px;
     width:100%;
     border-top:1px solid gray;
+   }
+
+   label {
+     width: 200px;
    }

@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabetic Predictor</title>
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  /> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetic Predictor</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
-<body>
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">            
-            <a class="navbar-brand" href="">Home</a>
-        </nav>
-        <div class="jumbotron">
-            <h1 class="display-4 heading">Diabetic Predictor</h1>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <h3>Diabetes ------ </h3>
 
-                <p>
-                   Enter information on project and data
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="h-divider"></div>
-          <div class="container-fluid">
-            <div class="row" style="justify-content: center;">
-              <div class="col-md-5" style="padding: 20px;">
-                <form action="{{ url_for('predict') }}" method="POST">
-                  <ul>
-                    <li>
-                      <label for="pregnancies">Number of Pregnacies</label>
-                      <input class="form-input" type="text" name="pregnancies" placeholder="0" value="1"><br>
-                    </li>
-                    <li>
-                        <label for="glucose">Glucose(mg/dL)</label>
-                        <input class="form-input" type="text" name="glucose" placeholder="80" value="103"><br>
-                    </li>
-                    <li>
-                        <label for="bloodpressure">Blood Pressure(mmHg)</label>
-                        <input class="form-input" type="text" name="bloodpressure" placeholder="120" value="80"><br>
-                    </li>
-                    <li>
-                        <label for="skinthickness">Skin Thickness(mm) </label>
-                        <input class="form-input" type="text" name="skinthickness" placeholder="4" value="11"><br>
-                    </li>
-                    <li>
-                        <label for="insulin">Insulin Level(IU/mL)</label>
-                        <input class="form-input" type="text" name="insulin" placeholder="10" value="82"><br>
-                    </li>
-                    <li>
-                      <label for="bmi">Body Mass Index(kg/m2)</label>
-                      <input class="form-input" type="text" name="bmi" placeholder="25" value="19.4"><br>
-                  </li>
-                  <li>
-                    <label for="dpf">Diabetes Pedigree Function</label>
-                    <input class="form-input" type="text" name="dpf" placeholder="0.33" value="0.491"><br>
-                </li>
-                <li>
-                  <label for="age">Age(years)</label>
-                  <input class="form-input" type="text" name="age" placeholder="21" value="22"><br>
+<body>
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Diabetic Predictor</h2>
+          <p>
+            Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when
+            the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar.
+            Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to
+            serious damage to many of the body's systems, especially the nerves and blood vessels
+            Diabetes prediction system is very useful system in the healthcare field
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-divider"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6" style="padding: 20px;border-right: 1px dashed #333;">
+          <form action="{{ url_for('predict') }}" method="POST">
+            <ul>
+              <li>
+                <label for="pregnancies">Number of Pregnacies</label>
+                <input class="form-input" type="text" name="pregnancies" placeholder="0" value="1"><br>
+              </li>
+              <li>
+                <label for="glucose">Glucose(mg/dL)</label>
+                <input class="form-input" type="text" name="glucose" placeholder="80" value="103"><br>
+              </li>
+              <li>
+                <label for="bloodpressure">Blood Pressure(mmHg)</label>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="120" value="80"><br>
+              </li>
+              <li>
+                <label for="skinthickness">Skin Thickness(mm) </label>
+                <input class="form-input" type="text" name="skinthickness" placeholder="4" value="11"><br>
+              </li>
+              <li>
+                <label for="insulin">Insulin Level(IU/mL)</label>
+                <input class="form-input" type="text" name="insulin" placeholder="10" value="82"><br>
+              </li>
+              <li>
+                <label for="bmi">Body Mass Index(kg/m2)</label>
+                <input class="form-input" type="text" name="bmi" placeholder="25" value="19.4"><br>
+              </li>
+              <li>
+                <label for="dpf">Diabetes Pedigree Function</label>
+                <input class="form-input" type="text" name="dpf" placeholder="0.33" value="0.491"><br>
+              </li>
+              <li>
+                <label for="age">Age(years)</label>
+                <input class="form-input" type="text" name="age" placeholder="21" value="22"><br>
               </li>
               <li>
                 <button style="width: 100%;" type="submit" class="btn btn-dark">Predict</button>
               </li>
-          </ul>
-        </form>
-              </div>         
-            </div>
+            </ul>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div>
+            {% if prediction==1 %}
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: red">Oops! You have
+              DIABETES</h1>
+            <img src="/static/images/sad.svg" style="width: 50%">
+            {% elif prediction==0 %}
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: green;">Great! You DON'T
+              have diabetes.</h1>
+            <img src="/static/images/Smiley_Face.jfif" style="width: 90%">
+            {% endif %}
           </div>
-
+        </div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <!-- <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script> -->
+  </div>
 </body>
+
 </html>
