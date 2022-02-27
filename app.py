@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 
-lr_model = pickle.load(open('lr-model.pkl', 'rb'));
+eec_model = pickle.load(open('eec_model.pkl', 'rb'));
 
 app = Flask(__name__)
 
@@ -25,7 +25,7 @@ def predict():
         age = int(request.form['age'])
         
         data = np.array([[preg, glucose, bp, st, insulin, bmi, dpf, age]])
-        prediction = lr_model.predict(data)
+        prediction = eec_model.predict(data)
         print("**********")
         print(prediction)
         print("**********")
