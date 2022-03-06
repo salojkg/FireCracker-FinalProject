@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="../static/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 </head>
 
 <body>
@@ -31,39 +32,39 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6" style="padding: 20px;border-right: 1px dashed #333;">
-          <form action="{{ url_for('predict') }}" method="POST">
+          <form action="{{ url_for('predict') }}" method="POST" id="dpForm">
             <ul>
               <li>
                 <label for="pregnancies">Number of Pregnacies</label>
-                <input class="form-input" type="text" name="pregnancies" placeholder="0"><br>
+                <input class="form-input" type="text" name="pregnancies" id="pregnancies" placeholder="0"><br>
               </li>
               <li>
                 <label for="glucose">Glucose(mg/dL)</label>
-                <input class="form-input" type="text" name="glucose" placeholder="80"><br>
+                <input class="form-input" type="text" name="glucose" id="glucose" placeholder="80"><br>
               </li>
               <li>
                 <label for="bloodpressure">Blood Pressure(mmHg)</label>
-                <input class="form-input" type="text" name="bloodpressure" placeholder="120"><br>
+                <input class="form-input" type="text" name="bloodpressure" id="bloodpressure" placeholder="120"><br>
               </li>
               <li>
                 <label for="skinthickness">Skin Thickness(mm) </label>
-                <input class="form-input" type="text" name="skinthickness" placeholder="4"><br>
+                <input class="form-input" type="text" name="skinthickness" id="skinthickness" placeholder="4"><br>
               </li>
               <li>
                 <label for="insulin">Insulin Level(IU/mL)</label>
-                <input class="form-input" type="text" name="insulin" placeholder="10"><br>
+                <input class="form-input" type="text" name="insulin" id="insulin" placeholder="10"><br>
               </li>
               <li>
                 <label for="bmi">Body Mass Index(kg/m2)</label>
-                <input class="form-input" type="text" name="bmi" placeholder="25"><br>
+                <input class="form-input" type="text" name="bmi" id="bmi" placeholder="25"><br>
               </li>
               <li>
                 <label for="dpf">Diabetes Pedigree Function</label>
-                <input class="form-input" type="text" name="dpf" placeholder="0.33"><br>
+                <input class="form-input" type="text" name="dpf" id="dpf" placeholder="0.33"><br>
               </li>
               <li>
                 <label for="age">Age(years)</label>
-                <input class="form-input" type="text" name="age" placeholder="21"><br>
+                <input class="form-input" type="text" name="age" id="age" placeholder="21"><br>
               </li>
               <li>
                 <button style="width: 100%;" type="submit" class="btn btn-dark">Predict</button>
@@ -87,6 +88,6 @@
       </div>
     </div>
   </div>
+  <script src="../static/js/validation.js"></script>
 </body>
-
 </html>
