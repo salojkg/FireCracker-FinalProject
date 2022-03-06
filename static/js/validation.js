@@ -23,8 +23,8 @@ form.addEventListener('submit', (event) => {
     } else if (st == undefined || st == null || st == "" || isNaN(st) || st < 0 || st >= 99) {
         alert("Skin Thickness cannot be empty and sholud ba valid number between 0 - 99");
         event.preventDefault();
-    }else if (insulin == undefined || insulin == null || insulin == "" || isNaN(insulin)|| insulin < 0 || insulin >= 50) {
-        alert("Insulin cannot be empty and sholud ba valid number between 0 - 50");
+    }else if (insulin == undefined || insulin == null || insulin == "" || isNaN(insulin)|| insulin < 0 || insulin >= 500) {
+        alert("Insulin cannot be empty and sholud ba valid number between 0 - 500");
         event.preventDefault();
     }else if (bmi == undefined || bmi == null || bmi == "" || isNaN(bmi)|| bmi < 12 || bmi >= 100) {
         alert("BMI cannot be empty and sholud ba valid number between 12 -100");
